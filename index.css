@@ -1,0 +1,260 @@
+* {
+    /* color-scheme: light dark; */
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1d1d1d;
+    scroll-behavior: smooth;
+}
+
+/* containers */
+
+.container {
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: white;
+    align-content: center;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+}
+
+/* Portadas */
+
+.portada {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    justify-content: center;
+    height: 200px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* Información */
+
+.info {
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    transition: ease 0.5s;
+}
+
+.info hr {
+    border-style: solid;
+    /* border-width: 5px; */
+    border-radius: 5px;
+    border-color: #414141;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.contenedor-tags {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+}
+
+.contenedor-tags p {
+    padding: 7px;
+    border-radius: 20px;
+}
+
+/* descripcion */
+
+.desc {
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #1d1d1d;
+}
+
+.desc hr {
+    margin: 0;
+}
+
+.desc p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.about {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.social {
+    text-align: center;
+    align-items: center;
+}
+
+/* foto de perfil */
+
+.imagen {
+    display: inline-block;
+    position: relative;
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
+    border-style: solid;
+    border-width: 7px;
+    overflow: hidden;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.imagen img {
+    width: auto;
+    height: 100%;
+    /* max-width: 400px; */
+}
+
+/* Redes Sociales */
+
+.social-pages {
+    display: flex;
+    justify-content: center;
+}
+
+.social-pages a{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 15px;
+    border-radius: 20px;
+    transition: ease 0.5s;
+}
+
+.youtube {
+    background-color: #eb7f7f;
+    color: #9c3333;
+}
+
+.youtube:hover {
+    background-color: #c25f5f;
+    color: #691c1c;
+}
+
+.discord {
+    background-color: #4984dd;
+    color: #e1e6f7;
+}
+.discord:hover {
+    background-color: #2759a5;
+    border-radius: 20px;
+    color: #e1e6f7;
+}
+
+.github {
+    background-color: #e9e9e9;
+    color: #949494;
+}
+.github:hover {
+    background-color: #c0c0c0;
+    color: #6b6b6b;
+}
+
+/* Responsive */
+
+@media (max-width: 840px) {
+    .info {
+        justify-content: center;
+    }
+    
+    .imagen {
+        margin: 0 auto;
+        position: relative;
+        margin-top: 60px;
+        right: 5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagen img {
+        margin: 0 auto;
+    }
+    
+    .name {
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .desc p {
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .desc hr {
+        border-style: none;
+    }
+
+    .contenedor-tags {
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+
+    .contenedor-tags p {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        padding: 0;
+    }
+
+    .social-pages {
+        display: block;
+        justify-content: center;
+    }
+
+    .social-pages a{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 7px;
+        justify-content: center;
+    }
+
+    .portada img {
+        width: fit-content;
+        /* height: 100%; */
+    }
+}
