@@ -1,0 +1,157 @@
+body {
+    background-color: #979797;
+    font-family: "Open Sans", sans-serif;
+}
+
+.row {
+    display: flex;
+    position: relative;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.hiddenLink {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: ease 0.2s;
+}
+
+.containerError {
+    transition: ease 0.3s;
+}
+
+.hiddenLink:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    font-weight: bold;
+    border-style: none;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container_campos {
+    background-color: #797979;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 2px;
+    padding: 20px;
+}
+
+.texto {
+    padding: 20px;
+    border-radius: 5px;
+    border-style: none;
+    resize: none;
+    background-color: #686868;
+    color: white;
+    transition: ease 0.5s;
+}
+
+.container_output {
+    background-color: #797979;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 2px;
+    padding: 20px;
+}
+
+.salida {
+    padding: 30px;
+    border-radius: 5px;
+    resize: none;
+    cursor: text;
+}
+
+.encrypt {
+    background-color: #ff9f9f;
+    color: #c56969;
+    transition: ease 0.5s;
+}
+
+.encrypt:hover {
+    background-color: #da6e6e;
+    color: white;
+}
+
+.decrypt {
+    background-color: #8ce78c;
+    color: green;
+    transition: ease 0.5s;
+}
+
+.decrypt:hover {
+    background-color: rgb(81, 177, 81);
+    color: white;
+}
+
+.clear {
+    background-color: #c2c2c2;
+    color: #686868;
+    transition: ease 0.5s;
+}
+
+.clear:hover {
+    background-color: #686868;
+    color: white;
+}
+
+.copy {
+    transition: ease 0.5s;
+}
+
+.copy:hover {
+    background-color: black;
+    color: white
+}
+
+hr {
+    border: solid 1px;
+    border-color: #686868;
+}
+
+.enlaces {
+    margin: 0 5px;
+    padding: 5px;
+    transition: ease 0.5s;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+.discord .yt .linkedin {
+    transition: ease 0.5s;
+}
+
+.discord:hover {
+    color: #616edd;
+}
+
+.yt:hover {
+    color: #e02909;
+}
+
+.linkedin:hover {
+    color: #098ae0;
+}
+
+.enlaces:hover {
+    font-size: 40px;
+}
