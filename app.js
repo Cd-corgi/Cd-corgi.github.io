@@ -9,7 +9,7 @@ tenerTexto.addEventListener("input", function () {
         tenerTexto.style.backgroundColor = "#686868"
         errorL.setAttribute("hidden", true)
         errorL.innerText = "El texto proporcionado debe tener al menos un carácter"
-        errorL.style.color = "#965151"
+        errorL.style.color = "white"
     } else {
         errorL.removeAttribute("hidden")
         tenerTexto.style.backgroundColor = "#965151"
@@ -20,7 +20,7 @@ function invocar(numero) {
     if (tenerTexto.value.length < 1) {
         errorL.removeAttribute("hidden")
         errorL.innerText = "El texto proporcionado debe tener al menos un carácter"
-        errorL.style.color = "#965151"
+        errorL.style.color = "white"
         tenerTexto.style.backgroundColor = "#965151"
         return;
     } else {
