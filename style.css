@@ -1,157 +1,353 @@
 body {
-    background-color: #979797;
+    background-color: #f3f5fc;
+    color: #0a3871;
     font-family: "Open Sans", sans-serif;
+    scroll-behavior: auto;
+}
+
+main {
+    box-sizing: border-box;
 }
 
 .row {
     display: flex;
-    position: relative;
-    align-items: baseline;
     justify-content: center;
+    justify-items: center;
+    align-content: center;
+    margin: 0 auto;
+    transform: translateY(12%);
+}
+
+.logo {
+    position: fixed;
+}
+
+.letralogo {
+    width: 100%;
+    max-width: 100px;
 }
 
 .container {
-    position: absolute;
-    top: 15%;
-    left: 15%;
-}
-
-.hiddenLink {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: ease 0.2s;
-}
-
-.containerError {
-    transition: ease 0.3s;
-}
-
-.hiddenLink:hover {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 3px;
-    font-weight: bold;
-    border-style: none;
-    padding: 10px;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.container_campos {
-    background-color: #797979;
-    border-radius: 20px;
-    text-align: center;
-    margin-right: 2px;
-    padding: 20px;
+    margin: 0 auto;
 }
 
 .texto {
-    padding: 20px;
-    border-radius: 5px;
-    border-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 1.5em;
     resize: none;
-    background-color: #686868;
-    color: white;
-    transition: ease 0.5s;
-}
-
-.container_output {
-    background-color: #797979;
-    border-radius: 20px;
-    text-align: center;
-    margin-left: 2px;
-    padding: 20px;
-}
-
-.salida {
-    padding: 30px;
-    border-radius: 5px;
-    resize: none;
-    cursor: text;
-}
-
-.encrypt {
-    background-color: #ff9f9f;
-    color: #c56969;
-    transition: ease 0.5s;
-}
-
-.encrypt:hover {
-    background-color: #da6e6e;
-    color: white;
-}
-
-.decrypt {
-    background-color: #8ce78c;
-    color: green;
-    transition: ease 0.5s;
-}
-
-.decrypt:hover {
-    background-color: rgb(81, 177, 81);
-    color: white;
-}
-
-.clear {
-    background-color: #c2c2c2;
-    color: #686868;
-    transition: ease 0.5s;
-}
-
-.clear:hover {
-    background-color: #686868;
-    color: white;
-}
-
-.copy {
-    transition: ease 0.5s;
-}
-
-.copy:hover {
-    background-color: black;
-    color: white
-}
-
-hr {
-    border: solid 1px;
-    border-color: #686868;
-}
-
-.enlaces {
-    margin: 0 5px;
-    padding: 5px;
-    transition: ease 0.5s;
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    text-decoration: none;
-    color: rgb(49, 49, 49);
+    background-color: #f3f5fc;
+    border-style: none;
+    color: #0a3871;
 }
 
-.discord .yt .linkedin {
+.espaciador {
+    width: 200px;
+}
+
+.zonaTexto {
+    margin-left: 5em;
+    align-items: center;
+}
+
+.zonaResultado {
+    margin-left: 5em;
+    max-width: 250px;
+    background-color: #FFFFFF;
+    padding: 2em;
+    height: 430px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.116);
+}
+
+.resu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    opacity: 0;
+    height: 73%;
+    resize: none;
+    border: none;
+    color: #0a3871;
+    font-size: 20px;
+}
+
+textarea {
+    background-color: white;
+    scrollbar-color: #d8dfe8 rgba(0, 0, 0, 0);
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+}
+
+.logo2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logo2 img {
+    position: absolute;
+    transform: translate(0.1em, 8em);
+    width: 100%;
+    max-width: 200px;
+}
+
+.advertencia {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     transition: ease 0.5s;
 }
 
-.discord:hover {
-    color: #616edd;
+.mensaje {
+    position: absolute;
+    transform: translate(0, 15em);
+    display: flex;
+    margin-top: 65px;
+    color: black
 }
 
-.yt:hover {
-    color: #e02909;
+.hint  {
+    transform: translate(0, 30em);
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
 }
 
-.linkedin:hover {
-    color: #098ae0;
+.botonCopiar {
+    display: flex;
+    margin: 0 auto;
+    padding: 15px 60px;
+    margin-top: 4em;
+    border-radius: 10px;
+    border: solid 0.5px;
+    color: #0a3871;
+    border-color: #0a3871;
 }
 
-.enlaces:hover {
-    font-size: 40px;
+.leyenda {
+    font-size: 9px;
+    color: gray;
 }
+
+.rowBoton {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rowBoton button {
+    padding: 15px 60px;
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.encriptar {
+    background-color: #0a3871;
+    color: white;
+    border: none;
+}
+
+.desencriptar {
+    background-color: #d8dfe8;
+    border-color: #0a3871;
+    color: #0a3871;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        margin: 0;
+        /* transform: translate(-6%); */
+    }
+
+    .logo {
+        z-index: 5;
+    }
+
+    .row {
+        display: block;
+        margin: 0 auto;
+        max-width: 768px;
+        width: 75%;
+        justify-content: center;
+    }
+
+    .espaciador {
+        width: 0;
+    }
+
+    .zonaTexto {
+        margin: 0 auto;
+    }
+
+    .zonaTexto textarea {
+        width: 100%;
+    }
+
+    .leyenda {
+        margin: 10px 9em;
+    }
+
+    #advertencia {
+        display: none
+    }
+
+    .resu {
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .mensaje {
+        top: 12em;
+    }
+    
+    .hint {
+        top: 23em;
+    }
+    .zonaResultado {
+        display: grid;
+        width: auto;
+        height: auto;
+        max-height: 700em;
+        margin: 0 auto;
+        margin-top: 1em;
+        max-width: 37.5em;
+        margin-bottom: 1em;
+    }
+
+    .zonaResultado textarea {
+        display: grid;
+        resize: none;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        display: flexbox;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .row {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        width: 75%;
+        justify-content: center;
+    }
+
+    #advertencia {
+        display: none;
+    }
+
+    .rowBoton {
+        display: block;
+        margin-bottom: 1em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .espaciador {
+        height: 5px;
+    }
+
+    .rowBoton button {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .leyenda {
+        max-width: 355px;
+        width: 100%;
+    }
+
+    .letralogo {
+        position: fixed;
+        transform: scale(60%);
+        max-width: 100px;
+        left: -30px;
+        top: -20px;
+    }
+
+    .zonaTexto {
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100%;
+        height: 26em;
+    }
+
+    .espaciadorR {
+        height: 20px;
+    }
+
+    .zonaResultado {
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100%;
+        height: 26em;
+    }
+
+    .zonaTexto textarea{
+        font-size: 25px;
+        max-width: 385px;
+        width: 95%;
+    }
+
+    .zonaResultado {
+        max-height: fit-content;
+        max-width: 400px;
+        margin: 0 auto;
+        width: 78.9%;
+        height: 30%;
+        margin-bottom: 10px;
+    }
+
+    .zonaResultado textarea{
+        font-size: 15px;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .botonCopiar {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mensaje {
+        transform: translate(0px);
+    }
+    .hint {
+        transform: translate(0px, 55px);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 376px) {
+    .zonaResultado {
+        max-height: fit-content;
+        max-width: 320px;
+        margin: 0 auto;
+        width: 71.5%;
+        height: 30%;
+        margin-bottom: 10px;
+    }
+}
+

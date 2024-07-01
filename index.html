@@ -13,60 +13,40 @@
 </head>
 
 <body>
-    <div class="row container">
-        <div class="container_campos">
-            <h1>Encriptador de texto</h1>
-            <textarea name="campoTexto" class="texto" id="texto" rows="5" cols="50"
-                placeholder="Tu texto encriptado o no encriptado."></textarea>
-            <div class="containerError">
-                <p id="error" hidden>Error Placeholder</p>
-            </div>
+    <main>
+        <div class="logo">
+            <img class="letralogo" src="./img/logo.png" alt="" srcset="">
+        </div>
+        <div class="container">
             <div class="row">
-                <button class="encrypt" onclick="invocar(0)">
-                    <span>
-                        <i class="fa-solid fa-lock"></i>
-                        Encriptar
-                    </span>
-                </button>
-                <button class="clear" onclick="limpiarTexto()">
-                    <span>
-                        <i class="fa-solid fa-broom"></i>
-                        Limpiar campo
-                    </span>
-                </button>
-                <button class="decrypt" onclick="invocar(1)">
-                    <span>
-                        <i class="fa-solid fa-unlock"></i>
-                        Desencriptar
-                    </span>
-                </button>
-            </div>
-            <hr>
-            <div class="container_redes">
-                <h2>Redes sociales</h2>
-                <div class="row">
-                    <a href="https://github.com/Cd-corgi" class="enlaces github"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://discord.com/users/corgi_official1" class="enlaces discord"><i
-                            class="fa-brands fa-discord"></i></a>
-                    <a href="https://www.youtube.com/channel/UCnkviocxvPGS_80aNjJrCkQ" class="enlaces yt"><i
-                            class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com/in/juan-pablo-cortina-hernandez-aa296a200/"
-                        class="enlaces linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <div class="zonaTexto">
+                    <textarea class="texto" id="texto" cols="35" rows="8"
+                        placeholder="Escribe tu texto aqui"></textarea>
+                    <p class="leyenda"><i class="fa-solid fa-circle-info"></i> Solo admite letras Mayusculas, minusculas
+                        sin ascento y números.</p>
+                    <div class="rowBoton">
+                        <button class="encriptar" onclick="invocar(0)">Encriptar</button>
+                        <div class="espaciador"></div>
+                        <button class="desencriptar" onclick="invocar(1)">Desencriptar</button>
+                    </div>
                 </div>
-                <br>
+                <div class="espaciadorR"></div>
+                <div class="zonaResultado">
+                    <div class="advertencia">
+                        <div class="logo2">
+                            <img src="./img/image.png" alt="" srcset="" id="advertencia">
+                        </div>
+                        <h4 class="mensaje" id="ad1">Ningún mensaje fue<br>encontrado</h4>
+                        <p class="hint" id="ad2">Ingresa el texto que desees encriptar o<br>desencriptar.</p>
+                    </div>
+                    <!-- <textarea class="resu" id="resu" cols="28" rows="20" disabled placeholder="hola"></textarea> -->
+                    <textarea id="resu" class="resu" disabled></textarea>
+                    <!-- <p id="resu" class="resu"></p> -->
+                    <button id="copy" class="botonCopiar" onclick="copiar()">Copiar texto</button>
+                </div>
             </div>
         </div>
-        <div class="container_output">
-            <h1>Salida</h1>
-            <textarea name="salida" id="output" rows="10" cols="50" class="salida"
-                placeholder="Tu texto encriptado/desencriptado aqui" disabled></textarea>
-            <div class="row">
-                <button id="copy" class="copy" onclick="copiar()">Copiar contenido</button>
-            </div>
-            <p style="font-size: 12px;">Página creada por <a class="hiddenLink" href="#">Corgi</a> para el programa
-                de<br>Oracle Next Education (ONE)</p>
-        </div>
-    </div>
+    </main>
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/7e3edfeff1.js" crossorigin="anonymous"></script>
 </body>
