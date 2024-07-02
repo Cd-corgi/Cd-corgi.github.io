@@ -6,10 +6,6 @@ let errorL2 = document.getElementById("ad2");
 let copiarBoton = document.getElementById("copy")
 const diccionario = { "a": "1", "e": "2", "i": "3", "o": "4", "u": "5", "A": "6", "E": "7", "I": "8", "O": "9", "U": "0", }
 
-tenerTexto.value = ""
-salidaTexto.value = ""
-
-
 if (tenerTexto.value.length <= 1) {
     errorL.removeAttribute("hidden")
     errorL2.removeAttribute("hidden")
