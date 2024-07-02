@@ -8,11 +8,18 @@
     --warning-fore-color: #000000;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: "Open Sans", sans-serif;
     scroll-behavior: auto;
+    box-sizing: content-box;
+    height: 100vh;
 }
 
 main {
@@ -39,6 +46,7 @@ main {
 
 .container {
     margin: 0 auto;
+    height: 100vh;
 }
 
 .texto {
@@ -121,7 +129,7 @@ textarea {
     position: absolute;
     transform: translate(0, 15em);
     display: flex;
-    margin-top: 65px;
+    margin-top: 55px;
     color: var(--warning-fore-color)
 }
 
@@ -145,6 +153,7 @@ textarea {
 
 .leyenda {
     font-size: 9px;
+    margin: 2px;
     color: var(--hint-color);
 }
 
@@ -346,7 +355,7 @@ button {
         transform: translate(0px);
     }
     .hint {
-        transform: translate(0px, 55px);
+        transform: translate(0px, 60px);
     }
 }
 
