@@ -9,9 +9,6 @@ const diccionario = { "a": "1", "e": "2", "i": "3", "o": "4", "u": "5", "A": "6"
 tenerTexto.value = ""
 salidaTexto.value = ""
 
-// window.onresize = function () {
-//     location.reload()
-// }
 
 if (tenerTexto.value.length <= 1) {
     errorL.removeAttribute("hidden")
