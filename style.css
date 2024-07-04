@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --main-bg-color: #f3f5fc;
-    --main-text-color: #0a3871;
+    --main-bg-color: #fcfaf3;
+    --main-text-color: #71590a;
     --result-container-color: #ffffff;
-    --hint-color: #a7a1a1;
+    --hint-color: #a7a6a1;
     --fore-blue-button: #ffffff;
-    --secondary-button-color: #d8dfe8;
+    --secondary-button-color: #e8e6d8;
     --warning-fore-color: #000000;
+}
+
+img {
+    filter: hue-rotate(200deg)
 }
 
 * {
@@ -175,7 +179,7 @@ button {
 }
 
 .encriptar {
-    background-color: #0a3871;
+    background-color: var(--main-text-color);
     color: white;
     border: none;
 }
