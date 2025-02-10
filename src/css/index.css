@@ -1,0 +1,29 @@
+.container {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.rows {
+    display: grid;
+    margin: 0 auto;
+    position: relative;
+    bottom: 5%;
+    /* Move down 50% of the viewport height */
+    transform: translateY(25%);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form-control {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 615px) {
+    nav a{
+        text-align: center;
+        justify-content: center;
+    }
+}
