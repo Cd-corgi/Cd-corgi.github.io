@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         if (texto !== "09230107") {
             alert("Contraseña errada.");
-            window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-            // window.close();
+            // window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+            window.close();
             yes = false
         } else {
             yes = false
