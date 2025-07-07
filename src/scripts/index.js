@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         if (texto !== "09230107") {
             alert("Contraseña errada.");
+            window.close();
         } else {
             yes = false
         }
